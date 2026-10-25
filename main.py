@@ -45,7 +45,7 @@ def guessing_game():
 
     print("\nWho's pokemon is...")
     print(f"Height: {height}")
-    print(f"Weight: {weight}\n")
+    print(f"Weight: {weight}")
 
     for attempt in range(3):
         
