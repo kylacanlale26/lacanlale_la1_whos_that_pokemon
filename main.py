@@ -45,16 +45,21 @@ def guessing_game():
 
     print("\nWho's pokemon is...")
     print(f"Height: {height}")
-    print(f"Weight: {weight}")
+    print(f"Weight: {weight}\n")
 
     for attempt in range(3):
-
+        
         guess = input("\nGuess the Pokemon: ").lower().strip()
 
         if guess == name:
-            print("You are right!")
+            print("\n", 30 * "=")
+            print("\nYou are right!")
             break
         else:
-            print("Wrong guess! Try again.")
+            print("\n" + 30 * "=")
+            print("\nWrong guess! Try again.")
+    else:
+        print("\n" + 30 * "=")
+        print(f"\nYou failed to guess the Pokemon. It's {name}.")
 
 guessing_game()
